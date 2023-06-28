@@ -20,8 +20,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Gold Coast Web Design & Marketing"
-  : "Aidxn Design, award-winning Gold Coast web design & monthly marketing management at a fixed price.";
+  ? title + " | " + "Organic Marketing Management"
+  : "Helping small Australian businesses thrive on instagram with organic social media strategies and management. Located in Bellingen, NSW. Contact today about organic marketing management and social media brand redesigns.";
 ---
 
 
@@ -66,52 +66,14 @@ const makeTitle = title
       }}
     />
     
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WZGGV3Q');</script>
-  <!-- End Google Tag Manager -->
 
-  <!-- aidxn.com property linked to search console for better SEO - Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MN4T5PXYLD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-MN4T5PXYLD');
-    </script>
-    
-    <!-- Meta Pixel Code -->
-    <script async>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1456501161773389');
-      fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1456501161773389&ev=PageView&noscript=1"
-      /></noscript>
-    <!-- End Meta Pixel Code -->
   </head>
 
   <style>
-    html { max-width: 100vw; overflow-x: hidden; }
+    html { max-width: 100vw; overflow-x: hidden; background-color: #f1dfda; }
   </style>
   
-  <body class="bg-white">
-    <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZGGV3Q"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+  <body class="">
     <Navbar />
     <slot />
     <Detailedfooter />

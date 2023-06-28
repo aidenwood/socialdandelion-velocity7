@@ -11,46 +11,34 @@ import VideoProd from '../assets/3d-video.png';
 
 const features = [
   {
-    title: "Brand Strategy.",
+    title: "Organic Growth.",
     description:
-      "Brand design, strategy + direction that avoid design churn and huge ad spend.",
-    imgsrc: GraphicDesign,
-    imgalt: "Brand Design and strategy direction for the age of social marketing.",
-    link: "/brand-strategy",
+      "Unlock the power of organic growth strategies that drive results without the need for constant design changes or large advertising budgets.",
+    iconname: "ph:flower-light",
+    link: "/products",
     style: "outline",
     btntxt: "More info",
   },
   {
-    title: "Web Design.",
+    title: "Social Management.",
     description:
-      "Award-winning web design. 10+ years experience. High-performance web dev.",
-    imgsrc: WebDesign,
-    imgalt: "Gold Coast's best web design and development agency with over 10 years experience.",
-    link: "/web-design",
+      "Experience award-winning web design and leverage over 10 years of expertise in high-performance web development.",
+    iconname: "ph:share-network",
+    link: "/products",
     style: "outline",
     btntxt: "More info",
   },
   {
-    title: "Marketing.",
+    title: "Communication.",
     description:
-      "Deploy + scale marketing campaigns for local businesses + global brands.",
-    imgsrc: Marketing,
-    imgalt: "Ad strategy management on the Gold Coast without the giant fees.",
-    link: "/marketing",
-    style: "outline",
-    btntxt: "More info",
-  },
-  {
-    title: "Videography.",
-    description:
-      "Capture cheaper attention early in the funnel with professional video ads.",
-    imgsrc: VideoProd,
-    imgalt: "3D Video Design and Videography Production for Marketing",
-    link: "/video-ads",
+      "Deploy and scale effective marketing campaigns tailored to the unique needs of local businesses and global brands.",
+    iconname: "ph:chat-dots",
+    link: "/products",
     style: "outline",
     btntxt: "More info",
   },
 ];
+
 ---
 
 <style>
@@ -73,38 +61,30 @@ const features = [
 <main class="my-16 md:my-32">
   <div class="mb-8">
     <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold lg:tracking-tight">
-      Design, Develop. Market, Moonshot.
+      Take back your time with our efficient social media management services.
     </h2>
     <div class="flex flex-col lg:flex-row">
     <p class="w-full lg:w-1/2 text-sm lg:text-lg pr-4 lg:pr-8 mt-4 max-w-6xl text-slate-600"> 
-      We can't stand the way some digital marketing agencies burn ad spend for the sake of 'results'. 
-      Here to take full responsibility of our any sector of your business we're managing. With expertise 
-      across design, development + marketing, we help businesses launch more professionally for less.
+      Time is a valuable resource, especially for busy business owners. At The Social Dandelion, 
+      we understand this, which is why our social media management services are designed to save 
+      you time. 
+      
     </p>
     <p class="w-full lg:w-1/2 text-sm lg:text-lg pr-4 lg:pr-8 mt-4 max-w-6xl text-slate-600"> 
-      Covering businesses from A-Z of marketing brands in the toughest, most competitive spaces.
-      We're excited by the challenge of achieving what feels impossible, and trust us when we say,
-      this absolutely is't our first space-rodeo. Book a 15-min strategy call today to kick things off.
+      By handling the day-to-day tasks of content creation, scheduling, and engagement, we free up 
+      your schedule, allowing you to focus on other important aspects of your business, while still 
+      having confidence and measurable results.
     </p>
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 my-16 gap-4">
+  <div class="grid grid-cols-1 md:grid-cols-3 my-16 gap-4">
     {
       features.map((item) => (
         <div class="flex gap-4 items-start">
           <div id="glass-card" class="w-full h-full flex flex-row md:flex-col items-center">
             <div id="imgContainer" class="mt-1 w-1/4 md:w-48 md:h-48 xl:w-64 xl:h-64 px-4">
-              <Picture
-                    src={item.imgsrc}
-                    sizes="(max-width: 1000px) 1000px, 500px"
-                    widths={[500, 1000]}
-                    aspectRatio="1:1"
-                    background="#f2f2f2"
-                    fit="contain"
-                    position="center"
-                    class="w-full rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
-                  />
+              <Icon class="w-32" name={item.iconname} />
             </div>
             <div id="textContainer" class="w-3/4 md:w-full p-4">
               <h3 class="font-semibold text-lg md:text-xl lg:text-2xl">{item.title}</h3>{" "}

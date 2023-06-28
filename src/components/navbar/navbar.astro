@@ -3,25 +3,34 @@ import ContainerSticky from "@components/container-sticky.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-import aidxnLogo from 'assets/aidxn/aidxn-23-logo.svg'; 
+import aidxnLogo from 'assets/tsd-logo.svg'; 
 
 
 const menuitems = [
   {
-    title: "Design",
-    path: "/brand-strategy",
+    title: "About",
+    path: "/about",
   },
   {
-    title: "Develop",
-    path: "/web-design",
+    title: "Services",
+    path: "/services",
+    children: [
+      { title: "Social media strategy", path: "/services" },
+      { title: "Content creation", path: "/services" },
+      { title: "Copywriting", path: "/services" },
+      { title: "Profile optimisation", path: "/services" },
+      { title: "Community Engagement", path: "/services" },
+      { title: "Hashtag Strategy", path: "/services" },
+      { title: "Theme & Layout", path: "/services" },
+    ],
   },
   {
-    title: "Market",
-    path: "/marketing",
+    title: "Products",
+    path: "/products",
   },
   {
-    title: "Moonshot",
-    path: "/moonshot-plan",
+    title: "Portfolio",
+    path: "/portfolio",
   },
 ];
 ---
@@ -79,17 +88,13 @@ const menuitems = [
         </ul>
 
         <div class="lg:hidden flex items-center my-3 gap-4">
-          <Link style="inverted" data-netlify-identity-button block size="md"></Link>
-          <a href="https://aidxn.com/dashboard" class="dashboard-button hidden">Dashboard</a>
-          <Link href="https://g2ok5807scs.typeform.com/to/tCmzlDza" size="md" block>Book</Link>
+          <Link href="/contact" size="md" block>Book</Link>
         </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <Link style="inverted" data-netlify-identity-button size="md"></Link>
-        <a href="https://aidxn.com/dashboard" class="dashboard-button hidden">Dashboard</a>
-        <Link href="https://g2ok5807scs.typeform.com/to/tCmzlDza" size="md">Book</Link>
+        <Link href="/contact" size="md">Book</Link>
       </div>
     </div>
   </header>

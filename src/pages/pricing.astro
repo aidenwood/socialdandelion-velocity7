@@ -7,8 +7,8 @@ import Clients from "@components/clients.astro";
 
 const pricing = [
   {
-    name: "Startup.V7",
-    price: "$2445",
+    name: "Organic Social Media Management",
+    price: "$345/mth",
     popular: false,
     features: [
       "2x 15-min video-call brand sessions",
@@ -16,26 +16,16 @@ const pricing = [
       "3x web pages w/ 0.2 sec load time avg.",
       "High conversion landing pages with purposeful marketing",
       "Simple social conversion tracking",
-      "Social brand pack w/ 2x design releases",
-      "30+ Velocity.V7 components",
-      "Out-of-the-box SEO performance",
-      "Cookie-less social user tracking",
-      "Domain & DNS optimisation",
-      "Email forwarding setup",
-      "2x lead gen funnels",
-      "Stripe payment processing",
-      "Infitely extendable, ultra-light codebase",
-      "Lifetime ownership of your website with no subscription",
     ],
     button: {
       text: "Purchase",
-      link: "https://buy.stripe.com/7sIcOleXFgRTbrq4gg",
+      link: "#",
     },
   },
   {
-    name: "Expansion.V7",
+    name: "Social Revamp Package",
     price: 
-      "$4445",
+      "$745",
     popular: true,
     features: [
       "3x 15-min video-call brand sessions",
@@ -43,25 +33,15 @@ const pricing = [
       "6x web pages w/ 0.2 sec load time avg.",
       "High conversion landing pages with purposeful marketing",
       "Custom social conversion tracking",
-      "Social brand pack w/ 4x design releases",
-      "30+ Velocity.V7 components",
-      "Out-of-the-box SEO performance",
-      "Cookie-less social user tracking",
-      "Domain & DNS optimisation",
-      "Email forwarding setup",
-      "4x lead gen funnels",
-      "Stripe payment processing",
-      "Infitely extendable, ultra-light codebase",
-      "Lifetime ownership of your website with no subscription",
     ],
     button: {
       text: "Purchase",
-      link: "https://buy.stripe.com/28o15Dg1JfNPcvufZ6",
+      link: "#",
     },
   },
   {
-    name: "E-Commerce.V7",
-    price: "$8445",
+    name: "Engagement Package",
+    price: "$445",
     popular: false,
     features: [
       "4x 15-min video-call brand sessions",
@@ -70,20 +50,10 @@ const pricing = [
       "2x in-person strategy sessions",
       "E-Commerce store extension on sub-domain built with either Velocity7 or Shopify",
       "Custom social conversion tracking",
-      "Social brand pack w/ 8x design releases",
-      "30+ Velocity7 components",
-      "Out-of-the-box SEO performance",
-      "Cookie-less social user tracking",
-      "Domain & DNS optimisation",
-      "Email forwarding setup",
-      "2x lead gen funnels",
-      "Stripe payment processing",
-      "Infitely extendable, ultra-light codebase",
-      "Lifetime ownership of your website with no subscription",
     ],
     button: {
       text: "Purchase",
-      link: "https://buy.stripe.com/cN2eWtdTBdFH1QQ14d",
+      link: "#",
     },
   },
 ];
@@ -92,9 +62,9 @@ const pricing = [
 <Layout title="Pricing">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Velocity Pricing</Fragment>
+      <Fragment slot="title">Fair and Transparent Pricing</Fragment>
       <Fragment slot="desc"
-        >Simple & Predictable pricing. All Prices are Tax Inclusive. No Surprises.</Fragment
+        >Simple pricing & predictable results.</Fragment
       >
     </Sectionhead>
 
@@ -102,6 +72,5 @@ const pricing = [
       {pricing.map((item) => <Pricing plan={item} />)}
     </div>
     
-    <Clients />
   </Container>
 </Layout>
