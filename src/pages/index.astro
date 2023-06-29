@@ -7,6 +7,7 @@ import SectionHeadImgRev from "@components/sectionhead-img-rev.astro";
 import SectionHeadImg from "@components/sectionhead-img.astro";
 import Pagecover from '../assets/backgrounds/balance.webp';
 import Hero from "@components/hero.astro";
+import HeroRev from "@components/hero-rev.astro";
 import HeroSecondary from "@components/hero-secondary-slider.astro";
 import Hero3D from "@components/hero-secondary-3D.astro";
 import Clients from "@components/grid-4x3-clients.astro";
@@ -21,10 +22,11 @@ import Layout from "@layouts/Layout.astro";
 
 <Layout title="Award-Winning Web Design + Marketing">
   <ContainerFW>
-    <Hero />
-    <Grid /> 
+    <Hero /> 
+    <HeroRev />
   </ContainerFW>
   <ContainerXL>
+    <Grid />
     <SectionHeadImg>
       <Fragment slot="title">
         Empower your brand with a confident social media strategy

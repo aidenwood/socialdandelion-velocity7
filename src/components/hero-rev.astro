@@ -1,0 +1,67 @@
+---
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon";
+---
+
+<!-- SVG CSS and Animate for Aidxn Moving Logo -->
+<style>
+.glassCard {     
+    background: rgba(255,255,255,.2);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255,255,255,.1);
+    box-shadow: 0 0 80px #0003;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 45px 15px;
+    margin: 45px 0px; 
+}
+</style>
+
+<main class="my-8 md:my-16">
+  <div id="heroSection" class="flex flex-col-reverse md:flex-row-reverse items-center mb-8">
+    
+    <div id="textContainer" class="w-full md:w-2/5 lg:w-2/5 px-4 md:px-8">
+
+      <div>
+        <h1 style="heroTagline" class="text-lg md:text-2xl lg:text-4xl xl:text-6xl w-full pt-4 md:pt-8 md:pr-2 lg:pr-4 font-bold tracking-tighter">
+          Tasteful marketing for small businesses.
+        </h1>
+        <p class="text-sm lg:text-lg mt-6 text-slate-700 w-full lg:max-w-3xl">
+          Hear about the possibilities from our team.
+        </p>
+        <div class="mt-12 flex flex-col sm:flex-row gap-3">
+          
+          <form action="velocity/success" method="POST" name="Simple Contact" netlify>
+              <input type="hidden" name="form-name" value="Simple Contact">
+                <div class="max-w-2xl grid grid-rows-1 md:gap-8 mt-2 mb-8">
+                  <div class="relative z-0 w-full mb-8 group">
+                    <input type="text" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-2xl text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white focus:border-purple-400 focus:outline-none focus:ring-0 focus:border-purple-400 peer" placeholder=" " required="">
+                    <label for="floating_email" class="peer-focus:font-medium absolute text-md text-gray-300 duration-300 transform focus:border-purple-400 -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                      Email Address
+                    </label>
+                  </div>
+                  <button type="submit" class="text-white bg-purple-800 hover:bg-purple-400 focus:ring-4 font-semibold font-2xl rounded-lg w-full sm:w-auto px-5 py-2.5 text-center">
+                    Submit
+                  </button>
+                </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-3/5 lg:w-3/5 block">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="glassCard">
+          <p>1</p>
+        </div>
+        <div class="glassCard">
+          <p>1</p>
+        </div>
+        <div class="glassCard">
+          <p>1</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
