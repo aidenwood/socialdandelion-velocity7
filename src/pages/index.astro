@@ -23,19 +23,16 @@ import Layout from "@layouts/Layout.astro";
 <Layout title="Award-Winning Web Design + Marketing">
   <ContainerFW>
     <Hero /> 
-    <HeroRev />
+    <Grid />
   </ContainerFW>
   <ContainerXL>
-    <Grid />
+    <HeroRev />    
     <SectionHeadImg>
       <Fragment slot="title">
-        Empower your brand with a confident social media strategy
+        Save Time.
       </Fragment>
       <Fragment slot="desc">
-        Based on the Gold Coast and redefining the way businesses can manage their brand. Come back to Earth for 
-        air and remember the good old days of freelancers you can rely on. If your office is located on the Gold Coast 
-        we come directly to you, once a month to improve the speed of development. While also always being only a click away 
-        online if you're wanting to see where our work is upto, add a revision or next task.
+        Time is a valuable resource, especially for busy business owners. At The Social Dandelion, we understand this, which is why our social media management services are designed to save you time. By handling the day-to-day tasks of content creation, scheduling, and engagement, we free up your schedule, allowing you to focus on other important aspects of your business. With our time-saving solutions, you can rest assured that your social media presence is in capable hands.
       </Fragment>
       <Fragment slot="cover">
         <Picture
@@ -53,13 +50,10 @@ import Layout from "@layouts/Layout.astro";
 
     <SectionHeadImgRev>
       <Fragment slot="title">
-        Empower your brand with a confident social media strategy
+        Feel Confident.
       </Fragment>
       <Fragment slot="desc">
-        Based on the Gold Coast and redefining the way businesses can manage their brand. Come back to Earth for 
-        air and remember the good old days of freelancers you can rely on. If your office is located on the Gold Coast 
-        we come directly to you, once a month to improve the speed of development. While also always being only a click away 
-        online if you're wanting to see where our work is upto, add a revision or next task.
+        Confidence is key when it comes to managing your social media presence. With our expert guidance, you can feel confident knowing that your brand is making a strong impact on social media. We'll work closely with you to develop a customized strategy that aligns with your business goals and target audience. Our team will handle the intricacies of social media management, ensuring your brand's voice is consistent, engaging, and resonates with your audience.
       </Fragment>
       <Fragment slot="cover">
         <Picture
@@ -77,13 +71,10 @@ import Layout from "@layouts/Layout.astro";
 
     <SectionHeadImg>
       <Fragment slot="title">
-        Empower your brand with a confident social media strategy
+        Organic Management
       </Fragment>
       <Fragment slot="desc">
-        Based on the Gold Coast and redefining the way businesses can manage their brand. Come back to Earth for 
-        air and remember the good old days of freelancers you can rely on. If your office is located on the Gold Coast 
-        we come directly to you, once a month to improve the speed of development. While also always being only a click away 
-        online if you're wanting to see where our work is upto, add a revision or next task.
+        Harness the power of organic strategies with our comprehensive social media management services. Our experienced team understands the importance of building genuine connections with your audience. By focusing on organic growth, we implement tailored approaches to foster meaningful engagement, drive brand loyalty, and amplify your online presence. With our organic management solutions, you can achieve long-term success and stand out from the competition.
       </Fragment>
       <Fragment slot="cover">
         <Picture
@@ -98,12 +89,32 @@ import Layout from "@layouts/Layout.astro";
                 />
       </Fragment>
     </SectionHeadImg>
+
+    <SectionHeadImgRev>
+      <Fragment slot="title">
+        Tailored to your business.
+      </Fragment>
+      <Fragment slot="desc">
+        No two businesses are the same, which is why we offer customized social media solutions tailored to your specific needs. Our team takes the time to understand your business, target audience, and goals, ensuring that our strategies align perfectly with your brand. Whether you require content creation, community management, or audience engagement, our tailored approach will elevate your social media presence and deliver measurable results.
+      </Fragment>
+      <Fragment slot="cover">
+        <Picture
+                  src={Pagecover}
+                  sizes="(max-width: 2000px) 2000px, 1000px"
+                  widths={[1000, 1500, 2000]}
+                  aspectRatio="3:2"
+                  background="#f2f2f2"
+                  fit="cover"
+                  position="center"
+                  class="w-full rounded duration-200 hover:shadow-sm"
+                />
+      </Fragment>
+    </SectionHeadImgRev>
   </ContainerXL>
   <Container>
-    <ProductSlider />
     <Cta />
   </Container>
   <ContainerFW>
-    <BlogSlider />
+    <ProductSlider />
   </ContainerFW>
 </Layout>
