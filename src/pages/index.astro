@@ -23,9 +23,12 @@ import Layout from "@layouts/Layout.astro";
 <Layout title="Award-Winning Web Design + Marketing">
   <ContainerFW>
     <Hero /> 
+    <HeroSecondary />
   </ContainerFW>
   <ContainerXL>
-    <HeroRev />
+    <ContainerXL>
+      <Grid />
+    </ContainerXL>
   </ContainerXL>
   <Container>
     <SectionHeadImg>
@@ -112,13 +115,12 @@ import Layout from "@layouts/Layout.astro";
       </Fragment>
     </SectionHeadImgRev>
   </Container>
-  <ContainerXL>
-    <Grid />
-  </ContainerXL>
-  <Container>
-    <Cta />
-  </Container>
+
   <ContainerFW>
     <ProductSlider />
   </ContainerFW>
+
+  <Container>
+    <Cta />
+  </Container>
 </Layout>

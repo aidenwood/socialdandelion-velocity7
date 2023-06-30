@@ -36,7 +36,7 @@ const services = [
     imgalt: "Organic Social Media Management service for businesses",
     style: "outline",
     btntxt: "Learn More",
-    price: "Custom Quote",
+    price: "175",
     saleprice: "",
     paytype: "ongoing",
     buylink: "/services/organic-social-media-management",
@@ -58,7 +58,7 @@ const services = [
     imgalt: "Social Media Revamp Package for businesses",
     style: "outline",
     btntxt: "Learn More",
-    price: "Custom Quote",
+    price: "350",
     saleprice: "",
     paytype: "once-off",
     buylink: "/services/social-media-revamp-package",
@@ -80,7 +80,7 @@ const services = [
     imgalt: "Engagement Package for businesses",
     style: "outline",
     btntxt: "Learn More",
-    price: "Custom Quote",
+    price: "450",
     saleprice: "",
     paytype: "ongoing",
     buylink: "/services/engagement-package",
@@ -114,6 +114,7 @@ const services = [
   #glass-card {
     border-radius: 30px;
     margin: 20px 40px;
+    padding: 40px 20px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(30px);
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -128,7 +129,7 @@ const services = [
 
 <main class="my-8 md:my-16">
 <div class="mb-8">
-  <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold lg:tracking-tight">
+  <h2 class="text-md md:text-xl lg:text-2xl xl:text-4xl font-bold lg:tracking-tight">
     Our most popular services.
   </h2>
   <p class="text-sm lg:text-lg max-w-6xl mt-4 text-slate-600">
@@ -167,10 +168,8 @@ const services = [
               </ul>
             </div>
             <div class="flex items-center mb-8">
-              <p class="text-lg lg:text-xl font-normal text-black cursor-auto my-3">${item.saleprice}</p>
-              <del>
-                <p class="text-md lg:text-lg text-gray-400 cursor-auto ml-2">${item.price}</p>
-              </del>
+              <p class="text-lg lg:text-xl font-normal text-black cursor-auto my-3"><i>Starting from</i> ${item.price}</p>
+              
               <div class="ml-auto">
                 <Link 
                   onClick="onClick()"
