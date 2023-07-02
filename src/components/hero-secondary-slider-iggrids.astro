@@ -2,40 +2,76 @@
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 import { Picture } from "@astrojs/image/components";
-import Case1 from '../assets/tsd/case-1.jpeg';
-import Case2 from '../assets/tsd/case-2.jpeg';
-import Case3 from '../assets/tsd/case-3.jpeg';
+import Grid1 from '../assets/tsd/grid-1.png';
+import Grid2 from '../assets/tsd/grid-2.png';
+import Grid3 from '../assets/tsd/grid-3.png';
+import Grid4 from '../assets/tsd/grid-4.png';
+import Grid5 from '../assets/tsd/grid-5.png';
+import Grid6 from '../assets/tsd/grid-6.png';
 
 const sliderContent = [
   {
     icon: "ph:codesandbox-logo-thin",
-    img: Case1,
-    category: "Brand Strategy",
-    title: "$50k in sales, 3 months from launch, with $0 ad spend.",
+    img: Grid1,
+    category: "Social Media Revamp",
+    title: "Oz Bin Cleaning.",
     paragraph:
-      "We helped the small team at The Boogie Collective create one of the most successful small business launches we've seen. Saving them a huge % on revenue by using smarter integrations.",
+      "Focused on promoting results on brand design for increased conversion.",
     btntxt: "Read more",
     style: "outline",
     link: "#",
   },
   {
-    img: Case2,
+    img: Grid2,
     icon: "ph:intersect-light",
-    category: "Brand Strategy",
-    title: "Strategic brand for effective multi-modal marketing.",
+    category: "Social Media Revamp",
+    title: "Devine Disability Care.",
     paragraph:
-      "Working with real estate companies over Covid-19's most impactful months on marketing were an interesting time. One that proved you can't put all your eggs in one (marketing) basket.",
+      "Design focused around better brand awareness for increased engagement.",
     btntxt: "Read more",
     style: "outline",
     link: "#",
   },
   {
     icon: "ph:codesandbox-logo-thin",
-    img: Case3,
-    category: "Moonshot Plan",
-    title: "CPA reduced by over $50/sale in first month of Moonshot.",
+    img: Grid3,
+    category: "Social Media Revamp",
+    title: "ADSA QLD.",
     paragraph:
-      "Reduced CPA of a 3 year old, $8k / week campaign from $84 to $36.5 for a 20 year old Gold Coast business. Until we came and more than doubled the results of their ad spend after only one month of Moonshot.",
+      "Designed to show the level of care provided for increased competitiveness.",
+    btntxt: "Read more",
+    style: "outline",
+    link: "#",
+  },
+  {
+    icon: "ph:codesandbox-logo-thin",
+    img: Grid4,
+    category: "Social Media Revamp",
+    title: "LetsPlanIt Events.",
+    paragraph:
+      "Design focused around promoting services and results for increased bookings.",
+    btntxt: "Read more",
+    style: "outline",
+    link: "#",
+  },
+  {
+    icon: "ph:codesandbox-logo-thin",
+    img: Grid5,
+    category: "Social Media Revamp",
+    title: "Equest Collective.",
+    paragraph:
+      "Design focused on lifestyle of the sport and customer for increased engagement.",
+    btntxt: "Read more",
+    style: "outline",
+    link: "#",
+  },
+  {
+    icon: "ph:codesandbox-logo-thin",
+    img: Grid6,
+    category: "Social Media Revamp",
+    title: "Serenity Hair & Co.",
+    paragraph:
+      "Design focused around promoting quality and results for increased conversion.",
     btntxt: "Read more",
     style: "outline",
     link: "#",
@@ -88,10 +124,10 @@ const sliderContent = [
 
     <div class="py-6">
       <h2 style="heroTagline" class="text-3xl lg:text-4xl xl:text-6xl w-full font-bold tracking-tight">
-        Boosting presence for small businesses around Australia.
+        Professional layouts & management.
       </h2>
       <p class="text-sm lg:text-lg mt-6 pr-8 text-slate-700 w-full lg:max-w-3xl">
-        We create engaging conversation with your audience through design and topics that Australian's are genuinely interested in. 
+        Whether you just need a new layout design that is aligned with your brand design and customers engagement, or a full management service, we have you covered. 
       </p>
       
       <div class="mt-12 flex flex-col sm:flex-row gap-3">
@@ -120,15 +156,19 @@ const sliderContent = [
     <!-- START flickity slider for Case Studies -->
     <div class="product-carousel w-full h-full">
       { sliderContent.map((item) => (    
-        <div class="carousel-cell w-full">
+        <div id="glass-card" class="carousel-cell w-full">
           <div id="slideContainer" class="flex flex-col-reverse items-center justify-center gap-y-4">
-            
+            <div id="textContainer" class="w-full flex flex-col gap-y-4">
+                    <span class="text-gray-700 mr-3 font-thin uppercase text-md">{item.category}</span>
+                    <h3 class="font-semibold text-lg md:text-xl lg:text-2xl">{item.title}</h3>{" "}
+                    <p class="text-xs lg:sm max-w-3xl font-regular text-slate-500 pr-8 leading-relaxed">{item.paragraph}</p>
+                  </div>
             <div id="imgContainer" class="w-full z-10">
               <Picture
                   src={item.img}
                   sizes="(max-width: 1200px) 100vw, 800px"
                   widths={[800, 1200]}
-                  aspectRatio="9:16"
+                  aspectRatio="1:1"
                   background="#f2f2f2"
                   fit="cover"
                   position="center"
@@ -156,5 +196,6 @@ const sliderContent = [
   cellAlign: 'center',
   autoPlay: 2400,
   imagesLoaded: true,
+  adaptiveHeight: true,
   });
 </script>

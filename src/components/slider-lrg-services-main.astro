@@ -129,24 +129,23 @@ const services = [
 <main class="my-8 md:my-16">
 <div class="mb-8">
   <h2 class="text-md md:text-xl lg:text-2xl xl:text-4xl font-bold lg:tracking-tight">
-    Our most popular services.
+    Grow with us.
   </h2>
   <p class="text-sm lg:text-lg max-w-6xl mt-4 text-slate-600">
-    We offer full-suite, design to deployment marketing management under our Moonshot plan, but we don't expect you to fall in love straight away. 
-    Get to know our work and turn-around for deliverables + requests, we're sure you'll be asking for a key to the house in no time.
+    Our products and services are made to be easy going. Helping create massive results for your business without much of your time or money.
   </p>
 </div>
 
 <div id="sliderContainer" class="services-carousel h-fit pb-4">
   {
     services.map((item) => (
-      <div id="glass-card" class="carousel-cell flex flex-col xl:flex-row justify-center md:items-center h-fit w-full md:w-2/3">
-          <div id="imgContainer" class="w-1/2 md:3/4 xl:w-2/5 px-2">
+      <div id="glass-card" class="carousel-cell flex flex-col lg:flex-row justify-center md:items-center h-fit w-full md:w-2/3">
+          <div id="imgContainer" class="w-1/2 md:3/4 lg:w-2/5">
             <Picture
                   src={item.imgsrc}
                   sizes="(max-width: 1200px) 1200px, 900px, 600px"
                   widths={[600, 900, 1200]}
-                  aspectRatio="1:1"
+                  aspectRatio="9:16"
                   loading="eager"
                   background="#f2f2f200"
                   fit="cover"
@@ -154,7 +153,7 @@ const services = [
                   class="w-full rounded"
                 />
           </div>
-          <div class="my-4 w-full xl:w-3/5 px-2">
+          <div class="my-4 w-full xl:w-3/5 px-4">
             <span class="text-gray-400 mr-3 uppercase text-xs">{item.category}</span>
             <h3 class="font-semibold text-xl md:text-2xl">{item.title}</h3>{" "}
             <p class="text-xs lg:text-md max-w-3xl text-slate-700 mt-2 mb-4 pr-4 lg:pr-8 leading-relaxed">{item.description}</p>
@@ -191,7 +190,7 @@ const services = [
   // element argument can be a selector string
   //   for an individual element
   var flkty = new Flickity( '.services-carousel', {
-  cellAlign: 'left',
+  cellAlign: 'center',
   contain: true,
   imagesLoaded: true,  
   adaptiveHeight: true,

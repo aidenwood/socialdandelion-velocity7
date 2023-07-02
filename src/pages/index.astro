@@ -13,7 +13,8 @@ import Pagecover5 from '../assets/tsd/dandelion-4.jpg';
 import Hero from "@components/hero.astro";
 import HeroRev from "@components/hero-rev.astro";
 import HeroSecondary from "@components/hero-secondary-slider.astro";
-import Hero3D from "@components/hero-secondary-3D.astro";
+import HeroSecondaryIG from "@components/hero-secondary-slider-iggrids.astro";
+
 import Clients from "@components/grid-4x3-clients.astro";
 import MoonshotHero from "@components/hero-secondary-singleproduct-moonshot.astro";
 import Cta from "@components/cta.astro";
@@ -30,7 +31,7 @@ import Layout from "@layouts/Layout.astro";
     <Grid />
   </ContainerFW>
   <ContainerXL>
-    <HeroSecondary />
+    <HeroSecondaryIG />
   </ContainerXL>
   <Container>
     <SectionHeadImg>
@@ -77,7 +78,7 @@ import Layout from "@layouts/Layout.astro";
   </Container>
 
   <ContainerXL>
-    <ProductSlider />
+    <HeroSecondary />
   </ContainerXL>
 
   <Container>
@@ -123,6 +124,10 @@ import Layout from "@layouts/Layout.astro";
       </Fragment>
     </SectionHeadImgRev>
   </Container>
+
+  <ContainerXL>
+    <ProductSlider />
+  </ContainerXL>
 
   <Container>
     <Cta />
