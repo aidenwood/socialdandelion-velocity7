@@ -20,7 +20,7 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Organic Marketing Management"
+  ? title + " | " + "The Social Dandelion | Thrive organically"
   : "Helping small Australian businesses thrive on instagram with organic social media strategies and management. Located in Bellingen, NSW. Contact today about organic marketing management and social media brand redesigns.";
 ---
 
@@ -37,16 +37,16 @@ const makeTitle = title
     <!-- preload custom font -->
     <link
     rel="preload"
-    href="/fonts/DalaFloda.woff2"
+    href="/fonts/Alice.ttf"
     as="font"
-    type="font/woff2"
+    type="font/ttf"
     crossorigin
     />
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Cutting Edge Web Design & Marketing Automation on the Gold Coast. Refresh your brand and get a faster, more competitive website for less with Velocity7, our in-house website framework."
+      description="Boosting presence for small businesses around Australia. Thrive organically on instagram, management with $0 in ad spend."
       canonical={canonicalURL}
       twitter={{
         creator: "@aidenwood",
@@ -57,11 +57,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Aidxn Design - Gold Coast Web Design & Marketing`,
+          title: `The Social Dandelion | Thrive organically`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Cutting Edge Web Design & Marketing Automation on the Gold Coast. Refresh your brand and get a faster, more competitive website for less with Velocity7, our in-house website framework.",
+          alt: "Boosting presence for small businesses around Australia. Thrive organically on instagram, management with $0 in ad spend.",
         },
       }}
     />

@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["dalafloda", "InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["Alice", "InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },
