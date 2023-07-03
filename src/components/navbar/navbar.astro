@@ -36,7 +36,7 @@ const menuitems = [
 ---
 
 <style>
-  #navLogo {height: 120px; margin: 10px 0px;} 
+  #navLogo {height: 105px; margin: 10px 0px;} 
   @media only screen and (max-width: 1199px) {
     #navLogo {
       height: 95px;
@@ -56,10 +56,10 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="">
-          <img id="navLogo" src={aidxnLogo} alt="Aidxn Design - Code by Aiden Wood"/>
+          <img id="navLogo" src={aidxnLogo} alt="The Social Dandelion - Thrive organically on instagram with zero ad spend strategies."/>
         </a>
         <div class="block lg:hidden">
-          <MenuIcon class="w-6 h-6 pr-2 text-gray-800" />
+          <MenuIcon class="w-6 h-6 pr-2 text-black" />
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
@@ -79,7 +79,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.path}
-                      class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+                      class="flex lg:px-3 py-2 text-slate-800 hover:text-black"
                     >
                       <h2>
                         {item.title}
@@ -93,46 +93,16 @@ const menuitems = [
         </ul>
 
         <div class="lg:hidden flex items-center my-3 gap-4">
-          <Link href="/contact" size="md" block>Book</Link>
+          <Link href="/contact" size="md" block>Contact</Link>
         </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <Link href="/contact" size="md">Book</Link>
+        <Link href="/contact" size="md">Contact</Link>
       </div>
     </div>
   </header>
 </ContainerSticky>
 
-<script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-<script type="text/javascript">
-  on.mounted(() => {
-    const netlifyIdentity = window.netlifyIdentity;
-    netlifyIdentity.init();
-
-    function showDashboardButton() {
-      console.log('showDashboardButton is running');
-      const user = netlifyIdentity.currentUser();
-      const dashboardButtons = document.querySelectorAll('.dashboard-button');
-
-      if (user) {
-        dashboardButtons.forEach(button => {
-          button.style.display = 'flex';
-        });
-      } else {
-        dashboardButtons.forEach(button => {
-          dashboardButtons.forEach(button => {
-            button.style.display = 'none';
-          });
-        });
-      }
-    }
-
-    showDashboardButton();
-    netlifyIdentity.on('login', showDashboardButton);
-    netlifyIdentity.on('logout', showDashboardButton);
-  });
-</script>
 
