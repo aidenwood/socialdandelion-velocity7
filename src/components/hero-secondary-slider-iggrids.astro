@@ -141,7 +141,7 @@ const sliderContent = [
         </a>
         <a href="/services" rel="noopener" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black flex gap-1 items-center justify-center">
           <svg viewBox="0 0 24 24" class="w-4 h-4">
-            <Icon class="text-black" name="ph:planet-light" />
+            <Icon class="text-black" name="ph:grid-four-light" />
           </svg>
           
           Services
@@ -154,7 +154,7 @@ const sliderContent = [
   <div id="rightContainer" class="w-full lg:w-2/5 px-4 md:px-8 -z-10">
 
     <!-- START flickity slider for Case Studies -->
-    <div class="product-carousel w-full h-full">
+    <div class="grid-carousel w-full h-full">
       { sliderContent.map((item) => (    
         <div id="glass-card" class="carousel-cell w-full">
           <div id="slideContainer" class="flex flex-col-reverse items-center justify-center gap-y-4">
@@ -191,7 +191,7 @@ const sliderContent = [
 <script>
   // element argument can be a selector string
   //   for an individual element
-  var flkty = new Flickity( '.product-carousel', {
+  var flkty = new Flickity( '.grid-carousel', {
   contain: true,
   cellAlign: 'center',
   autoPlay: 2400,
