@@ -3,28 +3,18 @@
 import { Icon } from "astro-icon";
 import Link from "@components/ui/link.astro";
 import { Picture } from "@astrojs/image/components";
-import VelocityEcomm from '../assets/products-sqr/velocity-ecommerce.webp';
-import VelocityLrg from '../assets/products-sqr/web-design-render.webp';
-import VelocitySml from '../assets/products-sqr/velocity-web-design.webp';
-import BrandPack from '../assets/products-sqr/brand-refresh.webp';
-import CPCmarketing from '../assets/products-sqr/google-search-ad-management.webp';
-import MetaAds from '../assets/products-sqr/fb-marketing-design.webp';
-import MetaAdManagement from '../assets/products-sqr/fb-marketing-management.webp';
-import AnimatedAds from '../assets/products-sqr/animated-ad-design.webp';
-import DisplayMarketing from '../assets/products-sqr/google-display-ad-management.webp';
-import PrintAds from '../assets/products-sqr/billboard-ad-design.webp';
-import BusAds from '../assets/products-sqr/bus-ad-management.webp';
-import CompleteBrandPack from '../assets/products-sqr/complete-brand-packages.webp';
-import BillboardAds from '../assets/products-sqr/sml-billboard-design.webp';
+import Management from '../assets/tsd/mgmt.jpg';
+import Revamp from '../assets/tsd/revamp.jpg';
+import Engagement from '../assets/tsd/engage.jpg';
 
 
 const services = [
   {
-    title: "Organic Social Media Management",
+    title: "Social Media Management",
     category: "Social Media Management",
     description:
       "Our Organic Social Media Management service offers a comprehensive approach to growing your brand's presence on social media platforms organically. With a focus on strategic planning and content creation, we help your business thrive without relying on paid advertising.",
-    imgsrc: VelocityEcomm,
+    imgsrc: Management,
     inclusions: [
       "Customized Social Media Strategy",
       "Content Creation and Scheduling",
@@ -42,11 +32,11 @@ const services = [
     buylink: "/services/organic-social-media-management",
   },
   {
-    title: "Social Media Revamp Package",
+    title: "Social Revamp Package",
     category: "Social Media Design",
     description:
       "Our Social Media Revamp Package is designed to give your social media profiles a fresh and eye-catching look. We provide a complete redesign of your social media grids and posts, including customized fonts and licensing. Additionally, we offer one month of social media management to apply the new design and ensure a seamless transition.",
-    imgsrc: VelocityLrg,
+    imgsrc: Revamp,
     inclusions: [
       "Complete Social Media Redesign",
       "Customized Fonts and Licensing",
@@ -68,7 +58,7 @@ const services = [
     category: "Social Media Marketing",
     description:
       "Our Engagement Package is designed to increase your social media reach and foster meaningful conversations with your audience. With a wide range of repeatable designs tailored to your target audience, we help your brand stand out and initiate engaging interactions. Discover the power of authentic engagement with our specialized package.",
-    imgsrc: VelocitySml,
+    imgsrc: Engagement,
     inclusions: [
       "Target Audience-focused Design",
       "Engagement-oriented Content Creation",
@@ -100,12 +90,13 @@ const services = [
   .carousel-cell {
     margin: 40px 20px;
     padding: 20px 40px;
+    min-height: 350px;
   }
 
   /* Start Flickity viewport safeguards V3 */
   main { max-width: 100%; }
-  .flickity-viewport { min-height: fit-content ; }
-  .blog-carousel, .flickity-viewport { max-width: 100vw !important; margin: 0 auto; min-height: 80vh; }
+  .flickity-viewport { height: fit-content ; }
+  .blog-carousel, .flickity-viewport { max-width: 100vw !important; margin: 0 auto; height: fit-content; }
   /* End Flickity viewport safeguards V3 */
   .services-carousel { margin: 20px auto; }
 
@@ -140,12 +131,12 @@ const services = [
   {
     services.map((item) => (
       <div id="glass-card" class="carousel-cell flex flex-col lg:flex-row justify-center md:items-center h-fit w-full md:w-2/3">
-          <div id="imgContainer" class="w-1/2 md:3/4 lg:w-2/5">
+          <div id="imgContainer" class="w-1/2 md:3/4 lg:w-2/5 py-4 md:py-8">
             <Picture
                   src={item.imgsrc}
-                  sizes="(max-width: 1200px) 1200px, 900px, 600px"
-                  widths={[600, 900, 1200]}
-                  aspectRatio="9:16"
+                  sizes="(max-width: 1600px) 1600px, 1200px, 900px"
+                  widths={[900, 1200, 1600]}
+                  aspectRatio="16:9"
                   loading="eager"
                   background="#f2f2f200"
                   fit="cover"
